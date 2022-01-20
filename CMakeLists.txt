@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.0)
+get_filename_component(ProjectId ${CMAKE_CURRENT_SOURCE_DIR} NAME)
+string(REPLACE " " "_" ProjectId ${ProjectId})
+project(${ProjectId})
+
+add_subdirectory(SekaiEngine)
+add_subdirectory(src/scences)
+
+add_executable(${PROJECT_NAME} src/main.cpp)
+target_link_libraries(${PROJECT_NAME} PUBLIC game_scences)
+target_link_libraries(${PROJECT_NAME} PUBLIC SekaiEngine)
