@@ -39,14 +39,4 @@ cmake ..
 ```
 After that, It's going to generate a project for you
 ### Web platform
-Please, install ```Emscripten SDK``` before
-
-Run CMake
-```
-emcmake cmake -H ..
-```
-
-Run Make
-```
-make PLATFORM=PLATFORM_WEB -B
-```
+This still be researching and developing
