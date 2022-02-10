@@ -35,6 +35,8 @@ elif DEVICE_OS == "Debian":
     package_install = subprocess.run("apt install -y git cmake g++", shell=True)
     if package_install.returncode != 0:
         print("Installation failed. Try to install git, cmake and g++ my yourself")
+        exit(package_install.returncode)
+    print("Installed successfully")
     
 
 SEKAI_ENGINE_GIT_URL = "https://github.com/hailiang194/SekaiEngine.git"
