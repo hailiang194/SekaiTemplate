@@ -5,6 +5,7 @@
 int main()
 {
     SekaiEngine::Core::Application app;
-    app.start(SekaiEngine::Object::Scence_ptr(new EntryScence()));
+    app.addScence("entry", new EntryScence());
+    app.start("");
     return 0;
 }
