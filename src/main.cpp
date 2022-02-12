@@ -6,6 +6,6 @@ int main()
 {
     SekaiEngine::Core::Application app;
     app.addScence("entry", new EntryScence());
-    app.start("");
+    app.start("entry");
     return 0;
 }
