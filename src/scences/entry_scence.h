@@ -2,7 +2,6 @@
     #define _ENTRY_SCENCE_H_
 
 #include "SekaiEngine/objects/scence.h"
-#include "SekaiEngine/graphics/text.h"
 
 class EntryScence: public SekaiEngine::Object::Scence
 {
@@ -12,19 +11,13 @@ public:
     EntryScence& operator=(const EntryScence& scence);
     ~EntryScence();
 
-    void setup() override;
+    void setupThis() override;
 
-    void update() override;
+    void updateThis() override;
 
-    void draw() override;
+    void drawThis() override;
 
-    void kill() override;
-private:
-    SekaiEngine::Graphic::Text* text1;
-    SekaiEngine::Graphic::Text* text2;
-    SekaiEngine::Graphic::Text* text3;
-    SekaiEngine::Graphic::Text* text4;
-    SekaiEngine::Graphic::Text* text5;
+    void killThis() override;
 };
 
 #endif // _ENTRY_SCENCE_H_
