@@ -11,13 +11,13 @@ public:
     EntryScence& operator=(const EntryScence& scence);
     ~EntryScence();
 
-    void setup() override;
+    void setupThis() override;
 
-    void update() override;
+    void updateThis() override;
 
-    void draw() override;
+    void drawThis() override;
 
-    void kill() override;
+    void killThis() override;
 };
 
 #endif // _ENTRY_SCENCE_H_

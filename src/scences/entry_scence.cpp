@@ -23,22 +23,22 @@ EntryScence::~EntryScence()
 
 }
 
-void EntryScence::setup()
+void EntryScence::setupThis()
 {
-    SekaiEngine::Object::Scence::setup();
+    SekaiEngine::Object::Scence::setupThis();
 }
 
-void EntryScence::update()
+void EntryScence::updateThis()
 {
-    SekaiEngine::Object::Scence::update();
+    SekaiEngine::Object::Scence::updateThis();
 }
 
-void EntryScence::draw()
+void EntryScence::drawThis()
 {
-    SekaiEngine::Object::Scence::draw();
+    SekaiEngine::Object::Scence::drawThis();
 }
 
-void EntryScence::kill()
+void EntryScence::killThis()
 {
-    SekaiEngine::Object::Scence::kill();
+    SekaiEngine::Object::Scence::killThis();
 }
