@@ -18,6 +18,10 @@ add_executable(${PROJECT_NAME} src/main.cpp)
 target_link_libraries(${PROJECT_NAME} PUBLIC game_scences)
 target_link_libraries(${PROJECT_NAME} PUBLIC SekaiEngine)
 
+target_include_directories(game_scences PUBLIC "${SekaiEngine_BINARY_DIR}/include")
+target_include_directories(${PROJECT_NAME} PUBLIC "${SekaiEngine_BINARY_DIR}/include")
+
+
 include(SekaiEngine/cmake/web.cmake)
 include(SekaiEngine/cmake/apple.cmake)
 
