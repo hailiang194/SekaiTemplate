@@ -16,7 +16,12 @@ target_include_directories(${PROJECT_NAME} PUBLIC "${SekaiEngine_BINARY_DIR}/inc
 include(SekaiEngine/cmake/web.cmake)
 include(SekaiEngine/cmake/apple.cmake)
 
+if (EMSCRIPTEN)
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} --preload-file ../assets@")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --preload-file ../assets@")
+else()
 add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_directory
         "${PROJECT_SOURCE_DIR}/assets"
 $<TARGET_FILE_DIR:${PROJECT_NAME}>)
+endif()

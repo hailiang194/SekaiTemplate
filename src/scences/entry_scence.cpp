@@ -33,7 +33,7 @@ void EntryScence::setupThis()
     SekaiEngine::Object::Scence::setupThis();
     m_circle.transform().color() = RED;
     m_rectangle.transform().color() = BLUE;
-    test = SekaiEngine::Core::Game::textures().loadData("icon1.png");
+    test = SekaiEngine::Core::Game::textures().loadData("icon.png");
 }
 
 void EntryScence::updateThis()
