@@ -4,7 +4,7 @@
 #include "SekaiEngine/objects/scence.h"
 #include "SekaiEngine/shapes/circle.h"
 #include "SekaiEngine/shapes/rectangle.h"
-#include "SekaiEngine/core/game.h"
+#include "SekaiEngine/graphics/texture.h"
 
 class EntryScence: public SekaiEngine::Object::Scence
 {
@@ -24,7 +24,7 @@ public:
 private:
     SekaiEngine::Graphic::Circle2D m_circle;
     SekaiEngine::Graphic::Rectangle m_rectangle;
-    std::uintptr_t test;
+    SekaiEngine::Graphic::EngineTexture m_texture;
 };
 
 #endif // _ENTRY_SCENCE_H_
