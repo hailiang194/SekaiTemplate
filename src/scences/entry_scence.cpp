@@ -41,15 +41,17 @@ void EntryScence::setupThis()
 void EntryScence::updateThis()
 {
     SekaiEngine::Object::Scence::updateThis();
+    m_circle.update();
+    m_rectangle.update();
+    m_texture.update();
 }
 
 void EntryScence::drawThis()
 {
     SekaiEngine::Object::Scence::drawThis();
-    m_circle.drawGraphic();
-    m_rectangle.drawGraphic();
-    m_texture.drawGraphic();
-    
+    m_circle.render();
+    m_rectangle.render();
+    m_texture.render();
 }
 
 void EntryScence::killThis()
