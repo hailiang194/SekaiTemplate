@@ -1,7 +1,7 @@
 #ifndef _ENTRY_SCENCE_H_
     #define _ENTRY_SCENCE_H_
 
-#include "SekaiEngine/objects/scence.h"
+#include "objects/scence.h"
 
 class EntryScence: public SekaiEngine::Object::Scence
 {

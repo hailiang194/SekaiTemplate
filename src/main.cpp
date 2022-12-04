@@ -1,5 +1,5 @@
 #include <iostream>
-#include "SekaiEngine/core/application.h"
+#include "core/application.h"
 #include "scences/entry_scence.h"
 
 int main()

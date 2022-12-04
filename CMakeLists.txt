@@ -10,8 +10,7 @@ add_subdirectory(src/scences)
 add_executable(${PROJECT_NAME} $<TARGET_OBJECTS:game_scences> src/main.cpp)
 target_link_libraries(${PROJECT_NAME} PUBLIC SekaiEngine)
 
-
-target_include_directories(${PROJECT_NAME} PUBLIC "${SekaiEngine_BINARY_DIR}/include")
+target_include_directories(${PROJECT_NAME} PUBLIC SekaiEngine/src/)
 
 include(SekaiEngine/cmake/web.cmake)
 include(SekaiEngine/cmake/apple.cmake)
