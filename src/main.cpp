@@ -1,11 +1,11 @@
 #include <iostream>
-#include "core/application.h"
-#include "scences/entry_scence.h"
+#include <core/Container.hpp>
+#include <core/Scence.hpp>
 
 int main()
 {
-    SekaiEngine::Core::Application app;
-    app.addScence("entry", new EntryScence());
-    app.start("entry");
+    SekaiEngine::Core::Scence scence;
+    SekaiEngine::Core::Container container;
+    scence.addObject(&container, SekaiEngine::Core::SCENCE_LAYER::CAMERA);
     return 0;
 }
