@@ -1,11 +1,10 @@
 #include <iostream>
-#include <core/Container.hpp>
-#include <core/Scence.hpp>
+#include "application/Application.hpp"
 
 int main()
 {
-    SekaiEngine::Core::Scence scence;
-    SekaiEngine::Core::Container container;
-    scence.addObject(&container, SekaiEngine::Core::SCENCE_LAYER::CAMERA);
+    SekaiEngine::Application::Application app("Game", 1280, 720);
+    app.addScrence("start", new SekaiEngine::Core::Scence());
+    app.start("start");
     return 0;
 }
